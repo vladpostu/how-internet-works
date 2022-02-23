@@ -216,8 +216,8 @@ top: -120px;
 
 #img_pieces > img {
     position: relative;
-    width: 150px;
-    height: 110px;
+    width: 120px;
+    height: 90px;
     transition: .5s;
 }
 
