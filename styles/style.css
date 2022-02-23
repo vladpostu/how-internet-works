@@ -249,7 +249,7 @@ top: -120px;
 #bandwidth_text {
     position: absolute;
     left: 5%;
-    height: 600px;
+    height: 100%;
 }
 
 #bandwidth > .content > h2 + p {
@@ -268,7 +268,7 @@ top: -120px;
 #chart_guy {
     position: absolute;
     right: 0%;
-    top: 40%;
+    top: 60%;
 }
 
 /* From cssbuttons.io by @alexmaracinaru */
