@@ -13,7 +13,7 @@ function animation() {
             piece.classList.add("spaced");
         });
         data_text.textContent = "Data is broken into smaller pieces"
-    }, 1000);
+    }, 0000);
 
     setTimeout(() => {
         pieces.forEach(piece => {
