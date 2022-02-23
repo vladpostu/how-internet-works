@@ -1,0 +1,332 @@
+
+:root {
+    --ligth-lue: #E4FBFF;
+    --gray: #B8B5FF;
+    --violet: #7868E6; 
+    --ligth-gray: #EDEEF7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--ligth-gray);
+    overflow-x: hidden;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 3rem;
+    color: var(--violet);
+}
+
+h1 > span {
+    display: block;
+    font-size: 4.5rem;
+    font-weight: 700;
+}
+
+.container {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1100px;
+    max-width: 95%;
+    margin-top: 4rem;
+}
+
+/* From cssbuttons.io by @westitan */
+button {
+    position: relative;
+    padding: 19px 36px;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+}
+
+button span {
+position: relative;
+color: #fff;
+font-family: Arial;
+letter-spacing: 8px;
+z-index: 1;
+}
+
+button .liquid {
+position: absolute;
+top: -80px;
+left: 0;
+width: 100%;
+height: 200px;
+background: var(--violet);
+box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
+transition: .5s;
+}
+
+button .liquid::after,
+button .liquid::before {
+content: '';
+width: 200%;
+height: 200%;
+position: absolute;
+top: 0;
+left: 50%;
+transform: translate(-50%, -75%);
+background: #fff;
+}
+
+button .liquid::before {
+border-radius: 45%;
+background: rgba(20, 20, 20, 1);
+animation: animate 5s linear infinite;
+}
+
+button .liquid::after {
+border-radius: 40%;
+background: rgba(20, 20, 20, .5);
+animation: animate 10s linear infinite;
+}
+
+button:hover .liquid {
+top: -120px;
+}
+
+@keyframes animate {
+0% {
+    transform: translate(-50%, -75%) rotate(0deg);
+}
+
+100% {
+    transform: translate(-50%, -75%) rotate(360deg);
+}
+}
+
+/*  */
+
+.front-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.front-page > img {
+    width: 800px;
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+}
+
+.space-beetween {
+    display: flex;
+    justify-content: space-between;
+}
+
+.space-around {
+    display: flex;
+    justify-content: space-around;
+}
+
+.core-container > div > h2 {
+    color: var(--violet);
+    font-size: 2.5rem;
+}
+
+.core-container > div > p {
+    font-size: 1.5rem;
+}
+
+
+.wave {
+    width: 100vw;
+    position: relative;
+    top: 10px;
+}
+
+.full-container {
+    position: relative;
+    width: 100vw;
+    min-height: 100px;
+    padding-bottom: 12rem;
+}
+
+#isp_container {
+    background: var(--gray);
+}
+
+.content {
+    width: 1000px;
+    max-width: 95%;
+    margin: 0 auto;
+    color: snow;
+}
+
+.background-text {
+    font-size: 6rem;
+    font-weight: 700;
+    letter-spacing: 1rem;
+    color: #FFFAFA;
+    opacity: 0.3;
+}
+
+.content > h2 {
+    color: snow;
+    font-size: 2.5rem;
+    position: relative;
+}
+
+#data_process {
+    background: #333;
+}
+
+#img_pieces {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+#img_pieces > img {
+    position: relative;
+    width: 150px;
+    height: 110px;
+    transition: .5s;
+}
+
+.spaced {
+    padding: 1rem;
+}
+
+@media screen and (max-width: 728px) {
+    .core-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .core-container > img {
+        margin-top: 1rem;
+    }
+}
+
+#bandwidth {
+    position: relative;
+}
+
+#bandwidth > * {
+    color: #333 !important;
+}
+
+#bandwidth_text {
+    position: absolute;
+    left: 5%;
+    height: 600px;
+}
+
+#bandwidth > .content > h2 + p {
+    position: relative;
+    color: #333 !important;
+    width: 600px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#bandwidth > .content > p {
+    font-size: 1.5rem;
+} 
+
+#chart_guy {
+    position: absolute;
+    right: 0%;
+    top: 40%;
+}
+
+/* From cssbuttons.io by @alexmaracinaru */
+.cta {
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+   }
+   
+   .cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #b1dae7;
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+   }
+   
+   .cta span a {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #234567;
+    text-decoration: none;
+   }
+   
+   .cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #234567;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+   }
+   
+   .cta:hover:before {
+    width: 100%;
+    background: #b1dae7;
+   }
+   
+   .cta:hover svg {
+    transform: translateX(0);
+   }
+   
+   .cta:active {
+    transform: scale(0.95);
+   }
+
+@media screen and (max-width: 1190px) {
+
+    #img_pieces {
+        margin-top: 2rem;
+    }
+}
