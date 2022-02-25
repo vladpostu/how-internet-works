@@ -204,6 +204,11 @@ h1 > span {
     top: 60%;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
 /* From cssbuttons.io by @alexmaracinaru */
 .cta {
     position: relative;
